@@ -7,21 +7,11 @@ import { Loading } from '../components/Tools/Misc';
 
 const Routers = () => {
     const Index = lazy(() => import('../pages/Main/Index'));
-    const Dashboard = lazy(() => import('../pages/Advisor/Auth/Dashboard'));
-
-    // Admin
-    const AdminLogin = lazy(() => import('../pages/Admin/Auth/Login'));
-    const AdminDashboard = lazy(() => import('../pages/Admin/Dashboard'));
 
     // const { user, loading } = useUser();
 
     const urls = [
         { path: '/', element: <Index />, type: 'any' },
-
-        { path: '/dashboard', element: <Dashboard />, type: 'auth' },
-
-        { path: '/admin/login', element: <AdminLogin />, type: 'any', admin: true },
-        { path: '/admin/dashboard', element: <AdminDashboard />, type: 'auth', admin: true },
 
         // catch-all 404 route (must be last)
         // { path: '*', element: <NotFound />, type: 'any' },
