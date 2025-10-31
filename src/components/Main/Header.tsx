@@ -1,8 +1,6 @@
 // resources/js/Components/Header.tsx
 import { appUrl } from '../../main';
 import { useState } from 'react';
-import { HiMenuAlt3, HiX } from 'react-icons/hi';
-import { classMap } from '../Tools/Misc';
 import { Link } from 'react-router-dom';
 
 
