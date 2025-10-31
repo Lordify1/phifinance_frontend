@@ -43,7 +43,7 @@ const getSocialIcon = (platform: string) => {
   }
 };
 
-export const Team = ({teamData}) => {
+export const Team = (teamData:any) => {
   const [selectedMember, setSelectedMember] = useState(null);
   const handleBack = () => setSelectedMember(null);
 
